@@ -14,14 +14,13 @@ import { SocialSharing } from '@awesome-cordova-plugins/social-sharing/ngx';
 import { IonicStorageModule } from '@ionic/storage-angular';
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, IonicStorageModule.forRoot()],
-  providers: [
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    InAppBrowser,
-    SocialSharing
-  ],
-  bootstrap: [AppComponent],
+    declarations: [AppComponent],
+    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, IonicStorageModule.forRoot()],
+    providers: [
+        { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+        InAppBrowser,
+        SocialSharing
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule {}
